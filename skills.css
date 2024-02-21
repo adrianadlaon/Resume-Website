@@ -1,0 +1,314 @@
+@font-face {
+    font-family: ProtestRevolution-Regular;
+    src: url("ProtestRevolution-Regular.ttf");
+}
+
+@font-face {
+    font-family: ComicNeue-Bold;
+    src: url("ComicNeue-Bold.ttf");
+}
+
+@font-face {
+    font-family: ComicNeue-Light;
+    src: url("ComicNeue-Light.ttf");
+}
+
+@font-face {
+    font-family: Audiowide-Regular;
+    src: url("Audiowide-Regular.ttf");
+}
+
+@font-face {
+    font-family: Wallpoet-Regular;
+    src: url("Wallpoet-Regular.ttf");
+}
+
+@font-face {
+    font-family: BowlbyOneSC-Regular;
+    src: url("BowlbyOneSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: Kanit-Black;
+    src: url("Kanit-Black.ttf");
+}
+
+
+@font-face {
+    font-family: Micro5-Regular;
+    src: url("Micro5-Regular.ttf");
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background-image: url(bg2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.container2 {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 125px;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 
+    0vw 0vw 1.5vw 0vw #17E1E6, 
+    0vw 0vw 1.5vw 0vw #17E1E6,
+    0vw 0vw 1.5vw 0vw #17E1E6,
+    0vw 0vw 1.5vw 0vw #17E1E6,
+    0vw 0vw 1.5vw 0vw #17E1E6;
+}
+
+.home-button {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: currentColor;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+    box-shadow: -20px 10px 30px rgba(0, 0, 0, 0.737);
+    overflow: hidden; 
+}
+
+.home-button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container:active{
+    transform: scaleY(0.90);
+}
+
+.home-button:hover {
+    background-color: blue;
+}
+
+.home-button::before,
+.home-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.home-button::before {
+    border-width: 0 0 100px 100px;
+    border-left-color: #3103fd; 
+    left: -50px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-button::after {
+    border-width: 100px 100px 0 0; 
+    border-right-color: #3103fd;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+hr {
+    height: 5px; 
+    background: linear-gradient(to right, transparent, #007bff, transparent);
+    border: none;
+    border-radius: 10px; 
+  }
+  
+.technical h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.technical h2::before{
+    content: "Technical Skills";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal 8s linear infinite;
+}
+
+@keyframes reveal {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.skill{
+    width: 900px;
+    margin: auto;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0, 10px 10px rgba(0,0,0,0.22);
+    margin-top: -30px;
+}
+
+.skill li{
+    list-style-type: none;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 1px 3px rgba(0,0,0,0.12),
+    0 1px 2px rgba(0,0,0.0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,.1);
+}
+
+.bar:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+    0 1px 2px rgba(0,0,0.0.24);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, #007bff 0%, #00ff00 100%);
+}
+
+.bar:hover span {
+    background: linear-gradient(135deg, #ff0000 0%, #ffff00 100%);
+    cursor: pointer;
+}
+
+
+.html{
+    width: 90%;
+    animation: html1 4s;
+}
+
+@keyframes html1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.css{
+    width: 85%;
+    animation: css1 4s;
+}
+
+@keyframes css1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.php{
+    width: 60%;
+    animation: php1 4s;
+}
+
+@keyframes php1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.python{
+    width: 75%;
+    animation: python1 4s;
+}
+
+@keyframes python1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+.sql{
+    width: 95%;
+    animation: sql1 4s;
+}
+
+@keyframes sql1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+.xml{
+    width: 75%;
+    animation: xml1 4s;
+}
+
+@keyframes xml1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+.technical h3 {
+    font-size: 35px;
+    font-family: Micro5-Regular;
+    font-weight: bolder;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.technical h3:hover {
+    font-size: 40px; 
+}
+
+.technical p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.technical p:first-letter{
+    margin-left: 70px; 
+}

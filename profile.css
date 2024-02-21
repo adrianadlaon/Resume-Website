@@ -1,0 +1,514 @@
+@font-face {
+    font-family: ProtestRevolution-Regular;
+    src: url("ProtestRevolution-Regular.ttf");
+}
+
+@font-face {
+    font-family: ComicNeue-Bold;
+    src: url("ComicNeue-Bold.ttf");
+}
+
+@font-face {
+    font-family: ComicNeue-Light;
+    src: url("ComicNeue-Light.ttf");
+}
+
+@font-face {
+    font-family: Audiowide-Regular;
+    src: url("Audiowide-Regular.ttf");
+}
+
+@font-face {
+    font-family: Wallpoet-Regular;
+    src: url("Wallpoet-Regular.ttf");
+}
+
+@font-face {
+    font-family: BowlbyOneSC-Regular;
+    src: url("BowlbyOneSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: Kanit-Black;
+    src: url("Kanit-Black.ttf");
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background-image: url(bg2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.container2 {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 125px;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 
+    0vw 0vw 1.5vw 0vw #17E1E6, 
+    0vw 0vw 1.5vw 0vw #17E1E6,
+    0vw 0vw 1.5vw 0vw #17E1E6,
+    0vw 0vw 1.5vw 0vw #17E1E6,
+    0vw 0vw 1.5vw 0vw #17E1E6;
+}
+
+.home-button {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: currentColor;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+    box-shadow: -20px 10px 30px rgba(0, 0, 0, 0.737);
+    overflow: hidden; 
+}
+
+.home-button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container:active{
+    transform: scaleY(0.90);
+}
+
+.home-button:hover {
+    background-color: blue;
+}
+
+.home-button::before,
+.home-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.home-button::before {
+    border-width: 0 0 100px 100px;
+    border-left-color: #3103fd; 
+    left: -50px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-button::after {
+    border-width: 100px 100px 0 0; 
+    border-right-color: #3103fd;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+hr {
+    height: 5px; 
+    background: linear-gradient(to right, transparent, #007bff, transparent);
+    border: none;
+    border-radius: 10px; 
+  }
+  
+
+.personal-profile h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 20px;
+}
+
+.personal-profile h2::before{
+    content: "Personal Profile";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal 8s linear infinite;
+}
+
+@keyframes reveal {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table1 th, .table1 td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd23;
+}
+
+.table1 td {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.educational-background h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.educational-background h2::before{
+    content: "Educational Background";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal 8s linear infinite;
+}
+
+.con h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.con h2::before{
+    content: "Contact";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal2 8s linear infinite;
+}
+
+@keyframes reveal2 {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.con table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.con table td {
+    padding: 35px;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd23;
+    vertical-align: bottom;
+}
+
+.con table img {
+    vertical-align: middle; 
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.679), 0 10px 8px rgba(0, 0, 0, 0.57);
+
+}
+
+.con table img:hover {
+    transform: scale(1.8); 
+}
+
+.con table a {
+    color: rgb(4, 0, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.con table a:hover {
+    color: red;
+}
+
+
+.work-exp h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.work-exp h2::before{
+    content: "Work Experience";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal2 8s linear infinite;
+}
+
+@keyframes reveal2 {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.educational-background h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.educational-background h2::before{
+    content: "Educational Background";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal 8s linear infinite;
+}
+
+@keyframes reveal {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.work-exp .paint, .work-exp1 .personal-assist {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.paint strong, .personal-assist strong {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paint span, .personal-assist span {
+    font-size: 16px;
+}
+
+.paint ul, .personal-assist ul {
+    list-style-type: none;
+    margin-left: 10;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.paint li, .personal-assist li {
+    font-size: 18px;
+    margin-bottom: 5px; 
+    padding-left: 30px;
+    position: relative;
+}
+
+.paint li::before, .personal-assist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to bottom right, #007bff, #00ffff);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.qual h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.qual h2::before{
+    content: "Qualification and Skills";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal 8s linear infinite;
+}
+
+@keyframes reveal {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.qual ul {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.qual li {
+    font-size: 18px;
+    margin-bottom: 5px; 
+    padding-left: 10px;
+    position: relative;
+    font-size: 25px;
+}
+
+.qual li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to bottom right, #007bff, #00ffff);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.char h2{
+    font-size: 50px;
+    font-family: BowlbyOneSC-Regular;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 1px cyan;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.char h2::before{
+    content: "References";
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: cyan;
+    animation: reveal 8s linear infinite;
+}
+
+@keyframes reveal {
+    0%
+    {
+        width: 0%; 
+    }
+    60%,100%
+    {
+        width: 100%;
+    }
+}
+
+.char {
+    margin-top: 20px;
+}
+
+.reference {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.reference li {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.reference .name {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.reference .email {
+    margin-top: -20px;
+    margin-left: 40px;
+    color: rgb(4, 0, 249);
+}
+
+.reference .number{
+    margin-top: -20px;
+    color: rgb(4, 0, 255);
+    text-decoration: none;
+}
+
